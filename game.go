@@ -614,10 +614,6 @@ func (g *game) RequestBlinds() error {
 
 func (g *game) Next() error {
 
-	if g.gs.Status.CurrentEvent != "RoundClosed" {
-		return ErrNotClosedRound
-	}
-
 	g.UpdateLastAction(-1, "next", 0)
 
 	switch g.gs.Status.Round {

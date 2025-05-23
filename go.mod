@@ -28,7 +28,4 @@ require (
 )
 
 // Use local replacements instead of trying to fetch from remote repositories
-replace (
-	github.com/d-protocol/pokerface => ../pokerface
-	github.com/d-protocol/pokertable => ../pokertable
-)
+replace github.com/d-protocol/pokertable => ../pokertable

@@ -13,7 +13,12 @@ func TestActor_BotRunner_Humanize(t *testing.T) {
 
 	// Initializing table
 	manager := pokertable.NewManager()
-	table, err := manager.CreateTable(pokertable.TableSetting{
+	tableEngineOptions := pokertable.NewTableEngineOptions()
+	tableEngineCallbacks := pokertable.NewTableEngineCallbacks()
+	tableEngineCallbacks.OnTableErrorUpdated = func(table *pokertable.Table, err error) {
+		t.Logf("Table error: %v", err)
+	}
+	table, err := manager.CreateTable(tableEngineOptions, tableEngineCallbacks, pokertable.TableSetting{
 		TableID: uuid.New().String(),
 		Meta: pokertable.TableMeta{
 			CompetitionID:       "1005c477-84b4-4d1b-9fca-3a6ad84e0fe7",
@@ -74,7 +79,7 @@ func TestActor_BotRunner_Humanize(t *testing.T) {
 			if table.State.GameState.Status.CurrentEvent == "GameClosed" {
 				t.Log("GameClosed", table.State.GameState.GameID)
 
-				if len(table.AlivePlayers()) == 1 {
+				if len(table.State.GameState.Players) == 1 {
 					tableEngine.CloseTable()
 					t.Log("Table deleted")
 					wg.Done()

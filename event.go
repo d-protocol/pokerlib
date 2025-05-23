@@ -248,7 +248,8 @@ func (g *game) onRoundClosed() error {
 		return err
 	}
 
-	return nil
+	// Automatically advance to the next round after closing the current one
+	return g.Next()
 }
 
 func (g *game) onPreflopRoundEntered() error {

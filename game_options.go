@@ -21,6 +21,7 @@ type BlindSetting struct {
 }
 
 type PlayerSetting struct {
+	PlayerID  string   `json:"player_id"`
 	Bankroll  int64    `json:"bankroll"`
 	Positions []string `json:"positions"`
 }

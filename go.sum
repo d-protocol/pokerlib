@@ -30,12 +30,6 @@ github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcU
 github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
 github.com/thoas/go-funk v0.9.3 h1:7+nAEx3kn5ZJcnDm2Bh23N2yOtweO14bi//dvRtgLpw=
 github.com/thoas/go-funk v0.9.3/go.mod h1:+IWnUfUmFO1+WVYQWQtIJHeRRdaIyyYglZN7xzUPe4Q=
-github.com/d-protocol/pokertable v0.0.0-20230818182614-a6fe03375bcf h1:SsqdSpoO7I32ALdc00+xBlDoExIRRhrJrr0G5SXZ9wc=
-github.com/d-protocol/pokertable v0.0.0-20230818182614-a6fe03375bcf/go.mod h1:hXaIQH0CPB8LmEURqMWq0003DLF3ubxg0kHfufvk3zk=
-github.com/d-protocol/syncsaga v0.0.0-20230821071725-a634f0872340 h1:ZHzlfkN/XnOIADtOxGUPbyislvjx0KjtTwCVuKEF1hw=
-github.com/d-protocol/syncsaga v0.0.0-20230821071725-a634f0872340/go.mod h1:1k6tuqJhfosy4htz/8WTL17Hn4W1BJD4R+Lp/08EOPI=
-github.com/d-protocol/timebank v0.0.0-20230713013837-bd7a6f808e3e h1:3v7juh57KHXyYVjfsE6gYn6tzgLBTQcDgg1A7fqNGC0=
-github.com/d-protocol/timebank v0.0.0-20230713013837-bd7a6f808e3e/go.mod h1:7ZB83P7QCjvRQm4DsMFVIRxEeXaiH75BRMzI5SMBH6Y=
 golang.org/x/crypto v0.9.0 h1:LF6fAI+IutBocDJ2OT0Q1g8plpYljMZ4+lty+dsqw3g=
 golang.org/x/crypto v0.9.0/go.mod h1:yrmDGqONDYtNj3tH8X9dzUun2m2lzPa9ngI6/RUPGR0=
 golang.org/x/sys v0.0.0-20190130150945-aca44879d564/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=

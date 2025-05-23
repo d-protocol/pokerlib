@@ -3,13 +3,13 @@ module github.com/d-protocol/pokerlib
 go 1.19
 
 require (
+	github.com/d-protocol/pokertable v0.0.0-20250522235840-06d931cd5fc5
+	github.com/d-protocol/syncsaga v0.0.0-20250522234550-88c17af8cd6c
+	github.com/d-protocol/timebank v0.0.0-20250522234202-39608dfc16ba
 	github.com/google/uuid v1.3.0
 	github.com/nats-io/nats-server/v2 v2.9.20
 	github.com/nats-io/nats.go v1.28.0
 	github.com/stretchr/testify v1.8.4
-	github.com/d-protocol/pokertable v0.0.0-20250522071725-a634f0872340
-	github.com/d-protocol/syncsaga v0.0.0-20250522071725-a634f0872340
-	github.com/d-protocol/timebank v0.0.0-20250522234202-39608dfc16ba
 )
 
 require (
@@ -25,4 +25,10 @@ require (
 	golang.org/x/sys v0.8.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+)
+
+// Use local replacements instead of trying to fetch from remote repositories
+replace (
+	github.com/d-protocol/pokerface => ../pokerface
+	github.com/d-protocol/pokertable => ../pokertable
 )
